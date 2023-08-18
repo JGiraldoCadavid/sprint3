@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fontsizelarge: large;
+}
+.underline{
+    text-decoration: underline;
+}
+main{
+    margin: 0.5rem;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+}
+.flexaligncenter{
+    display: flex;
+    align-items: center;
+}
+.flexspacearound{
+    display: flex;
+    justify-content: space-around;
+}
+.flexspaceevenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexspacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+.mainclass{
+    flex-direction: column;
+}
+#main-height{
+    min-height: 81.5vh;
+}
+.centradocolumna{
+    height: 8vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body{
+    background-color: lightcyan;
+}
+p{
+    font-size: x-large;
+}
+header{
+    background-color: blanchedalmond;
+    flex-wrap: wrap-reverse;
+}
+#logo{
+    height: 10vh;
+    max-width: 10vh;
+}
+a{
+    text-decoration: none;
+    font-size: var(--fontsizelarge);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 3px solid tomato;
+    border-radius: 10px;
+    padding: 10px;
+}
+.anchor1{
+    transform: rotate(-10deg);
+    transform-origin: 50% 50%;
+}
+.anchor2{
+    transform: rotate(10deg);
+    transform-origin: 50% 50%;
+}
+nav > a:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+.navegadora{
+    flex-wrap: wrap;
+    min-width: 40vw;
+    align-items: center;
+}
+.textoppal{
+    margin-top: 2px;
+    font-weight: bold;
+}
+#imagenppal{
+    height: 35vh;
+    width: 70vw;
+}
+#imagenppal2{
+    height: 15vw;
+}
+.parrafofinalppal{
+    width: 25vw;
+}
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: blanchedalmond;
+}
+.imagenacercade{
+    max-width: 15vw;
+}
+.parracercade{
+    width: 50vw;
+}
+.imagencontacto{
+    width: 70vw;
+    height: 40vh;
+}
+.parrcentradocontacto{
+    height: 20vh;
+}
+.parrimagencontacto{
+    height: 60vh;
+    flex-direction: column;
+}
+p>a{
+    color: black;
+    font-size: large;
+    padding: 1rem;
+}
+p>a:hover{
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: lightgreen;
+}
+div img{
+    border-radius: 15px;
+    box-shadow: 0 14px 14px 0 black;
+}
+table{
+    width: 34vw;
+    margin: 1rem;
+    border: 3px solid tomato;
+    border-radius: 1rem;
+    border-collapse: separate; 
+    border-spacing: 5px;
+    color: white;
+    font-size: x-large;
+}
+th,td{
+    padding: 1.2rem;
+    border-radius: 3px;
+}
+td{
+    background-color: rgb(145, 73, 85);
+}
+th{
+    background-color: rgb(117, 102, 102);
+}
+.imagenbeneficio{
+    width: 30vw;
+    height: 30vh;
+    margin: 0.8rem;
+}
+.contimagenesbeneficio{
+    justify-content: space-evenly;
+}
+ol{
+    display: flex;
+    width: 30vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+ul{
+    list-style-type: disc;
+}
+.map{
+    flex-direction: column;
+}
+legend{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+label{
+    margin-bottom: 5px;
+    margin-top: 6px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.campo{
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.iframeform{
+    min-height: 60vh;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    min-width: 30vw;
+    border-radius: 10px;
+}
+select{
+    padding: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 30px;
+    font-size: large;
+}
+.inputdate{
+    margin-bottom: 4px;
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+.radio{
+    margin: 3px;
+}
+textarea{
+    resize: none;
+    margin: 0.5rem;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.button{
+    height: 1.8rem;
+    width: 5rem;
+    background-color: lightseagreen;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    a{
+        margin: 1rem;
+    }
+    .iframeform{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 5px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 3px;
+    }
+    .anchor1, .anchor2{
+        transform: rotate(0deg);
+    }
+    a{
+        padding: 3px;
+        margin: 3px;
+    }
+    fieldset{
+        min-width: 70vw;
+    }
+    .iframeform{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-between;
+        margin: 1.5rem;
+    }
+    h2{
+        margin: 2rem 0 2rem 0;
+    }
+    .flexspacearound{
+        align-items: center;
+    }
+    .ubicacionmail{
+        align-items: flex-start;
+    }
+    .contimagenesbeneficio{
+        flex-direction: column;
+    }
+    .imagenbeneficio{
+       margin: 1.5rem; 
+    }
+    .mainraffle{
+        min-height: 130vh;
+    }
+    .parrcentradocontacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+    }
+    .parrimagencontacto{
+        margin-top: 2rem;
+        align-items: start;
+        height: 50vh;
+    }
+    .flexspacearound{
+        flex-direction: column;
+    }
+    .imagenacercade{
+        max-width: 50vw;
+        margin: 2rem;
+        align-content: flex-start;
+    }
+    .flexspaceevenly{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        min-width: 50vh;
+        align-items: center;
+        margin-top: 0.8rem;
+    }
+    #imagenppal{
+        margin-bottom: 0.5rem;
+    }
+    .parrafofinalppal{
+        margin-top: 2rem;
+    }
+    .imagencontacto{
+        margin-bottom: 2rem;
+    }
+} 
+
+@media screen and (min-width:320px) and (max-width:768px){
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 5px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin: 3px;
+    }
+    .anchor1, .anchor2{
+        transform: rotate(0deg);
+    }
+    a{
+        padding: 3px;
+        margin: 3px;
+    }
+    fieldset{
+        margin-top: 5rem;
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+    .iframeform{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: space-between;
+    }
+    h2{
+        margin: 2rem 0 2rem 0;
+    }
+    .flexspacearound{
+        align-items: center;
+    }
+    .ubicacionmail{
+        align-items: flex-start;
+    }
+    .contimagenesbeneficio{
+        flex-direction: column;
+    }
+    .imagenbeneficio{
+       margin: 1.5rem;
+       height: 20vh;
+       width: 70vw; 
+    }
+    .mainraffle{
+        min-height: 130vh;
+    }
+    th{
+        padding: 0;
+    }
+    td{
+        padding: 0;
+    }
+    .parrcentradocontacto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+    }
+    .parrimagencontacto{
+        margin-top: 2rem;
+        align-items: center;
+        height: 40vh;
+    }
+    .flexspacearound{
+        flex-direction: column;
+    }
+    .imagenacercade{
+        max-width: 50vw;
+        margin: 2rem;
+        align-content: flex-start;
+    }
+    .flexspaceevenly{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        min-width: 30vw;
+        min-height: 50vh;
+        margin-top: 0.8rem;
+    }
+    #imagenppal{
+        margin-bottom: 0.5rem;
+    }
+    .parrafofinalppal{
+        margin-top: 2rem;
+    }
+    .imagencontacto{
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    iframe{
+        height: 90%;
+        width: 90%;
+    }
+}
+
+/* - Mobile : From 320px to 768px.
+- Tablet : From 768px to 1024px.
+- Notebook/Pc : 1024px onwards. */
